@@ -5,8 +5,142 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+  <header class="top-menu">
+  	<div class="container">
+  		<nav class="main-navigation">
+  		  <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li> 
+            	<a href="#">Фото и видео</a>
+            </li>
+            <li> 
+            	<a href="#">Карта штата</a>
+            </li>
+            <li> 
+            	<a href="#">Гостиницы</a>
+            </li> 
+          </ul>
+        </nav>
+    </div>
+  </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+   <main class="container">
+
+	    <div class="sedona-intro">
+	        <img src="http://placehold.it/400x200">
+	    </div>
+
+	    <h2> Седона — небольшой городок в Аризоне, заслуживающий большего! <h2>
+	    <p> Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон! <p>
+
+	    <div class="real-city">
+	    	<h2> Настоящий городок </h2>
+	    	<p>- №1 -</p>
+	    	<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+	    	<img src="http://placehold.it/400x200">
+	    </div>
+
+	    <section class="features">
+	      <div class="features-item">
+	    	<img src="http://placehold.it/150x100">
+	    	<h2>Жилье</h2>
+	    	<p>Рекомендуем пожить в мотеле, все как в кино!</p>
+	      </div>
+
+	      <div class="features-item">
+	    	<img src="http://placehold.it/150x100">
+	    	<h2>Еда</h2>
+	    	<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+	      </div>
+
+	      <div class="features-item">
+	    	<img src="http://placehold.it/150x100">
+	    	<h2>Сувениры</h2>
+	    	<p>Не только китайского, но и местного производства!</p>
+	      </div>
+	    </section>
+
+	    <div class="attraction-two">
+	    	<h2> Там есть мост дьявола </h2>
+	    	<p>- №2 -</p>
+	    	<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+	    	<img src="http://placehold.it/400x200">
+	    </div>
+
+	    <section class="attractions">
+	      <div class="attractions-item">
+	    	<h2>Небольшая площадь</h2>
+	    	<p>- №3 -</p>
+	    	<p>Все достопримечательности находятся очень близко</p>
+	      </div>
+
+	      <div class="attractions-item">
+	    	<h2>Красивая дорога</h2>
+	    	<p>- №4 -</p>
+	    	<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+	      </div>
+
+	      <div class="attractions-item">
+	    	<h2>Мало туристов</h2>
+	    	<p>- №5 -</p>
+	    	<p>Большинство едет в гранд каньон и толпится там</p>
+	      </div>
+	    </section>
+
+	    <div class="interested">
+	    	Заинтересовались?
+	    	<p> Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне </p>
+	    </div>
+
+	    <div class="search">
+	      <form action="https://echo.htmlacademy.ru" method="post">
+	    	<h2>Поиск гостиницы в Седоне</h2>
+	    	Дата заезда:
+	    	<select name="date-arrival">
+	    		<option value="24-04-2017">24 Апреля 2017</option>
+	    	</select>
+	    	<br>
+	    	Дата выезда:
+	    	<select name="date-departure">
+	    		<option value="04-07-2017">4 Июля 2017</option>
+	    	</select>
+	    	<br>
+	    	<label for="adults-field">Взрослые : </label>
+	        <input type="text" name="adults" id="adults-field" value="2">
+	        <label for="children-field">Дети : </label>
+	        <input type="text" name="children" id="children-field" value="0">
+	        <br>
+	        <input type="submit" value="Найти">
+	      </form>
+	    </div>
+
+	    <div class="map">
+	    	<img src="http://placehold.it/400x200">
+	    </div>
+
+   </main>
+
+   <footer class="main-footer">
+      <div class="container">
+      	<section class="footer-hashtag">
+          #VisitSedona
+        </section>
+        <section class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-copyright">
+          <a class="btn" href="https://htmlacademy.ru">
+          	<img src="http://placehold.it/50x50">
+          </a>
+        </section>
+
+      </div>
+    </footer>
+  
 
   </body>
 </html>
