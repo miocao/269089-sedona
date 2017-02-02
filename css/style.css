@@ -21,3 +21,238 @@ h3 {
 	font-family: "PT Sans", "Arial", serif;
 	color: #000000;
 }
+
+/*body {
+	background: white url("sedona-index-1200.jpg") no-repeat 50% 8px;
+	background: white url("sedona-hotels-1200.jpg") no-repeat 50% 8px;
+    background-size: 1280px auto;
+}
+*/
+ul {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.container {
+	  width: 1200px;
+	  margin: 0 auto;
+	  /*padding: 0 10px;*/
+	  
+	  background-color: red;
+	  opacity: 0.5;
+}
+
+.container-inside {
+	width: 1056px;
+	margin: 0 auto;
+	  /*padding: 0 10px;*/
+	  
+	background-color: black;
+	opacity: 0.5;
+}
+
+.top-menu {
+	margin-bottom: 76px;
+	background-color: green;
+	opacity: 0.5;
+}
+
+.top-menu-hotels {
+	background-color: green;
+	opacity: 0.5;
+}
+
+.main-navigation {
+	min-height: 56px;
+
+	background-color: yellow;
+	opacity: 0.5;
+}
+
+.sedona-intro {
+	width: 457px;
+    height: 352px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 23px;
+
+	background-color: white;
+	opacity: 0.5;
+}
+
+.border {
+	height: 57px;
+	background-color: green;
+	opacity: 0.5;
+	margin-bottom: 61px;
+}
+
+.description {
+	height: 98px;
+	margin-bottom: 57px;
+	background-color: green;
+	opacity: 0.5;
+}
+
+.city-item {
+	float: left;
+	min-height: 256px;
+	width: 400px;
+	background-color: yellow;
+	opacity: 0.5;
+}
+
+.city .city-item-2 {
+	width: 800px;
+	background-color: blue;
+	opacity: 0.8;
+}
+
+.features-item {
+	float: left;
+	height: 330px;
+	width: 400px;
+	background-color: green;
+	opacity: 0.8;
+}
+
+.bridge-item {
+	float:left;
+	min-height: 256px;
+	width: 400px;
+	background-color: yellow;
+	opacity: 0.5;
+}
+
+.bridge .bridge-item-1 {
+	width: 800px;
+	background-color: blue;
+	opacity: 0.8;
+}
+
+.attractions-item {
+	float: left;
+	width: 400px;
+	height: 256px;
+	background-color: yellow;
+	opacity: 0.8;
+}
+
+.interested {
+	min-height: 153px;
+	background-color: green;
+	opacity: 0.8;
+}
+
+.search {
+	height: 86px;
+	width: 568px;
+	margin: 0 auto;
+	background-color: blue;
+	opacity: 0.8;
+}
+
+.map {
+	height: 473px;
+	background-color: yellow;
+	opacity: 0.8;
+}
+
+.main-footer {
+	background-color: red;
+	opacity: 0.8;
+}
+
+.footer-item {
+	float: left;
+	height: 120px;
+	width: 400px;
+	background-color: green;
+	opacity: 0.8;
+}
+
+.search-settings {
+	min-height: 217px;
+
+	background-color: blue;
+	opacity: 0.8;
+}
+
+.search-item {
+	float: left;
+	width: 240px;
+
+	background-color: orange;
+	opacity: 0.8;
+}
+
+.search-settings .filter-price {
+	float: right;
+	width: 328px;
+}
+
+.results {
+	min-height: 540px;
+
+	background-color: yellow;
+	opacity: 0.8;
+}
+
+.sort-choice {
+	min-height: 86px;
+	background-color: red;
+	opacity: 0.8;
+}
+
+.sort-item {
+	float: left;
+	width: 164px;
+
+	background-color: green;
+	opacity: 0.8;
+}
+
+.sort-choice .sort-for {
+	width: 364px;
+}
+
+.sort-choice .up-down{
+	float: right;
+	width: 36px;
+}
+
+.hotels {
+	min-height: 454px;
+	background-color: orange;
+	opacity: 0.8;
+}
+
+.hotel-item {
+	min-height: 151px;
+	background-color: blue;
+	opacity: 0.8;
+}
+
+.item {
+	float: left;
+	width: 165px;
+
+	background-color: yellow;
+	opacity: 0.8;
+}
+
+.hotel-item .hotel-name {
+	width: 258px;
+}
+
+.hotel-item .hotel-vote {
+	float: right;
+	width: 111px;
+}
