@@ -33,6 +33,7 @@ ul {
 	margin-bottom: 0px;
 }
 
+
 .clearfix::after {
   content: "";
 
@@ -43,7 +44,6 @@ ul {
 .container {
 	  width: 1200px;
 	  margin: 0 auto;
-	  /*padding: 0 10px;*/
 	  
 	  background-color: red;
 	  opacity: 0.5;
@@ -52,7 +52,6 @@ ul {
 .container-inside {
 	width: 1056px;
 	margin: 0 auto;
-	  /*padding: 0 10px;*/
 	  
 	background-color: black;
 	opacity: 0.5;
