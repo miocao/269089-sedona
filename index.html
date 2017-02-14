@@ -2,26 +2,31 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="css/style.css" rel="stylesheet">
 
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
   <header class="top-menu">
   	<div class="container">
+  		<div class="sedona-background">
+	    </div>
   		<nav class="main-navigation">
+  		  <div class="logo-image"></div>
   		  <ul>
             <li>
-              <a href="#">Информация</a>
+              <a class="menu-information" href="#">Информация</a>
             </li>
             <li> 
             	<a href="#">Фото и видео</a>
             </li>
             <li> 
-            	<a href="#">Карта штата</a>
+            	<a class="middle" href="#">Карта штата</a>
             </li>
             <li> 
-            	<a href="#">Гостиницы</a>
+            	<a class="last" href="#">Гостиницы</a>
             </li> 
           </ul>
         </nav>
@@ -30,85 +35,89 @@
 
    <main class="container">
 
+	    
 	    <div class="sedona-intro">
 	    </div>
 	    <div class="border">
 	    </div>
 
 	    <div class="description">
-	    	<h3> Седона — небольшой городок в Аризоне, заслуживающий большего! <h3>
-	    	<p> Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон! <p>
+	    	<div class="description1">
+	    		<h3> Седона — небольшой городок в Аризоне, <br> заслуживающий большего! <h3>
+	    	</div>
+	    	<div class="description2">
+	    		<p> Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон! <p>
+	    	</div>
 	    </div>
 
-	    <div class="city clearfix">
-	    	<div class="city-item city-item-1">
-	    		<h3> Настоящий городок </h3>
-	    		<p>- №1 -</p>
-	    		<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+	    <div class="attractions clearfix">
+	    	<div class="attractions-item item-city">
+	    		<div class="item-name"><h3> Настоящий <br> городок </h3></div>
+	    		<div class="item-number"><p>- №1 -</p> </div>
+	    		<div class="item-description"><p>Седона - не аттракцион для туристов, <br> там течет своя жизнь</p></div>
 	    	</div>
-	    	<div class="city-item city-item-2">
-	    		<img src="http://placehold.it/400x200"> 
+	    	<div class="attractions-item item-cityphoto">
 	    	</div>
 	    </div>
 
 
 	    <section class="features clearfix">
 	      <div class="features-item">
-	    	<img src="http://placehold.it/150x100">
-	    	<h3>Жилье</h3>
-	    	<p>Рекомендуем пожить в мотеле, все как в кино!</p>
+	    	<div class="features-picture home"></div>
+	    	<div class="features-name"><h3>Жилье</h3></div>
+	    	<div class="features-description"><p>Рекомендуем пожить в настоящем <br> мотеле, все как в кино!</p></div>
 	      </div>
 
 	      <div class="features-item">
-	    	<img src="http://placehold.it/150x100">
-	    	<h3>Еда</h3>
-	    	<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+	    	<div class="features-picture food"></div>
+	    	<div class="features-name"><h3>Еда</h3></div>
+	    	<div class="features-description"><p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p></div>
 	      </div>
 
 	      <div class="features-item">
-	    	<img src="http://placehold.it/150x100">
-	    	<h3>Сувениры</h3>
-	    	<p>Не только китайского, но и местного производства!</p>
+	    	<div class="features-picture souvernirs"></div>
+	    	<div class="features-name"><h3>Сувениры</h3></div>
+	    	<div class="features-description"><p>Не только китайского, но и местного <br> производства!</p></div>
 	      </div>
 	    </section>
 
-	    <div class="bridge clearfix">
-	    	<div class="bridge-item bridge-item-1">
-	    		<img src="http://placehold.it/400x200">
+	    <div class="attractions clearfix">
+	    	<div class="attractions-item item-bridgephoto">
 	    	</div>
-	    	<div class="bridge-item bridge-item-2">
-	    		<h3> Там есть мост дьявола </h3>
-	    		<p>- №2 -</p>
-	    		<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+	    	<div class="attractions-item item-bridge">
+	    		<div class="item-name"><h3> Там есть <br> мост дьявола </h3></div>
+	    		<div class="item-number"><p>- №2 -</p></div>
+	    		<div class="item-description"><p>Да, по нему можно пройти! Если конечно <br> вы осмелитесь</p></div>
 	    	</div>
 	    </div>
 
-	    <section class="attractions clearfix">
-	      <div class="attractions-item">
-	    	<h3>Небольшая площадь</h3>
-	    	<p>- №3 -</p>
-	    	<p>Все достопримечательности находятся очень близко</p>
+	    <div class="attractions clearfix">
+	      <div class="attractions-item item-square">
+	    	<div class="item-name"><h3>Небольшая <br> площадь</h3></div>
+	    	<div class="item-number"><p>- №3 -</p></div>
+	    	<div class="item-description"><p>Все достопримечательности <br> находятся очень близко</p></div>
 	      </div>
 
-	      <div class="attractions-item">
-	    	<h3>Красивая дорога</h3>
-	    	<p>- №4 -</p>
-	    	<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+	      <div class="attractions-item item-road">
+	    	<div class="item-name"><h3>Красивая <br> дорога</h3></div>
+	    	<div class="item-number"><p>- №4 -</p></div>
+	    	<div class="item-description"><p>Ехать в Седону из Лас-Вегаса совсем <br> не скучно!</p></div>
 	      </div>
 
-	      <div class="attractions-item">
-	    	<h3>Мало туристов</h3>
-	    	<p>- №5 -</p>
-	    	<p>Большинство едет в гранд каньон и толпится там</p>
+	      <div class="attractions-item item-tourist">
+	    	<div class="item-name"><h3>Мало <br> туристов</h3></div>
+	    	<div class="item-number"><p>- №5 -</p></div>
+	    	<div class="item-description"><p>Большинство едет в гранд каньон и <br> толпится там</p></div>
 	      </div>
-	    </section>
+	    </div>
 
-	    <div class="interested">
-	    	<h2>Заинтересовались?</h2>
-	    	<p> Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в седоне </p>
+	    <div class="title-interested">
+	    	<div class="interested"><h2>Заинтересовались?</h2></div>
+	    	<div class="form"><p> <span>Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в седоне <span></p></div>
 	    </div>
 
 	    <div class="search">
+	    	<div class="search-hotel"><h3>Поиск гостиницы в Седоне</h3></div>
 	      <!-- <form action="https://echo.htmlacademy.ru" method="post">
 	    	<h3>Поиск гостиницы в Седоне</h3>
 	    	Дата заезда:
@@ -129,35 +138,41 @@
 	        <input type="submit" value="Найти">
 	      </form> -->
 	    </div>
-
-	    <div class="map">
-	    	<img src="http://placehold.it/400x200">
-	    </div>
-
    </main>
 
    <footer class="main-footer">
+
       <div class="container clearfix">
 
-      	<section class="footer-item footer-hashtag">
-          #VisitSedona
-        </section>
+      	<div class="map">
 
-        <section class="footer-item footer-social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        </section>
+		    <div class="footer-info">
 
-        <section class="footer-item footer-copyright">
-          <a class="btn" href="https://htmlacademy.ru">
-          	<img src="http://placehold.it/50x50">
-          </a>
-        </section>
+		      	<section class="footer-item footer-hashtag">
+		          <h3>#VisitSedona</h3>
+		        </section>
+
+		        <section class="footer-item footer-social">
+		          <a class="social-btn social-btn-tw" href="#"></a>
+		          <a class="social-btn social-btn-fb" href="#"></a>
+		          <a class="social-btn social-btn-yt" href="#"></a>
+		        </section>
+
+		        <section class="footer-item footer-copyright">
+		          <div class="copyright web"><p>Website by</p></div>
+		          <a class="copyright btn" href="https://htmlacademy.ru"></a>
+		        </section>
+		    </div>
+		</div>
 
       </div>
     </footer>
-  
+  	
+  	<div class="modal-content">
+      <button class="modal-content-find" type="button" title="Закрыть">Найти</button>
+
+    </div>
+
 
   </body>
 </html>
