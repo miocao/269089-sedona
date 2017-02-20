@@ -28,8 +28,8 @@ h3 {
 }
 
 body {
-	background: white url("sedona-index-1200.jpg") no-repeat 50% 0px;
-	/*background: white url("sedona-hotels-1200.jpg") no-repeat 50% 0px;*/
+	/*background: white url("sedona-index-1200.jpg") no-repeat 50% 0px;*/
+/*	background: white url("sedona-hotels-1200.jpg") no-repeat 50% 0px;*/
     background-size: 1280px auto;
 }
 
@@ -53,79 +53,6 @@ body {
     display: block;
 }
 
-.sprite-1-calendar-click {
-    width: 21px;
-    height: 22px;
-    background-position: -10px -10px;
-}
-
-.sprite-1-calendar-hover {
-    width: 21px;
-    height: 22px;
-    background-position: -10px -52px;
-}
-
-.sprite-1-calendar-normal {
-    width: 21px;
-    height: 22px;
-    background-position: -10px -94px;
-}
-
-.sprite-1-checkbox-blocked {
-    width: 22px;
-    height: 22px;
-    background-position: -10px -136px;
-}
-
-.sprite-1-checked-blocked {
-    width: 26px;
-    height: 22px;
-    background-position: -10px -178px;
-}
-
-.sprite-1-fb-click {
-    width: 10px;
-    height: 19px;
-    background-position: -10px -310px;
-}
-
-.sprite-1-minus-click {
-    width: 12px;
-    height: 3px;
-    background-position: -10px -467px;
-}
-
-.sprite-1-minus-hover {
-    width: 12px;
-    height: 3px;
-    background-position: -10px -490px;
-}
-
-.sprite-1-minus-peace {
-    width: 12px;
-    height: 3px;
-    background-position: -10px -513px;
-}
-
-.sprite-1-plus-click {
-    width: 11px;
-    height: 11px;
-    background-position: -10px -536px;
-}
-
-.sprite-1-plus-hover {
-    width: 11px;
-    height: 11px;
-    background-position: -10px -567px;
-}
-
-.sprite-1-plus-normal {
-    width: 11px;
-    height: 11px;
-    background-position: -10px -598px;
-}
-
-
 .clearfix::after {
   content: "";
 
@@ -133,30 +60,39 @@ body {
   clear: both;
 }
 
-
-.main-navigation {
-	position: relative;
-	min-height: 56px;
-	background-color: #ffffff;
-}
-
 .logo-image {
 	position: absolute;
 	left: 531px;
 	width: 138px;
 	height: 70px;
-	z-index: 100px;
+	z-index: 100;
 	background: url(../img/logo.png) no-repeat 0 0;
 }
 
-.main-navigation ul {
+.navigation {
+	position: relative;
+	min-height: 56px;
+	background-color: #ffffff;
+}
+
+.left-navigation {
+	float: left;
+	width: 480px;
+}
+
+.right-navigation {
+	float: right;
+	width: 480px;
+}
+
+.navigation ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	font-size: 0;
 }
 
-.main-navigation li {
+.navigation li {
 	display: inline-block;
 
 	font-size: 14px;
@@ -164,21 +100,28 @@ body {
 	vertical-align: top;
 }
 
-.main-navigation a {
+.navigation a {
 	display: block;
-	padding: 17px 71px;
-	margin-right: 5px;
+	
+	padding: 17px 0;
 	color: #000000;
 	text-decoration: none;
 }
 
-.main-navigation .middle {
-	margin-left: 241px;
-	margin-right: 24px;
+.left-navigation a {
+	padding-left: 71px;
 }
 
-.main-navigation .last {
-	margin-right: 0px;
+.left-navigation .photo {
+	padding-left: 148px;
+}
+
+.right-navigation a {
+	padding-left: 77px;
+}
+
+.right-navigation .last-menu {
+	padding-left: 167px;
 }
 
 .menu-information:visited {
@@ -208,7 +151,6 @@ body {
 .border {
 	position: relative;
 	height: 57px;
-/*	width: 1200px;*/
 	width: 100%;
 	background: url("../img/whiteborder.png") no-repeat 0 0;
 
@@ -218,7 +160,7 @@ body {
 .sedona-background {
 	position: absolute;
 	top: 8px;
-	width: 1200px;
+	width: 100%;
     height: 556px;
     background: url("../img/background.jpg") no-repeat 0 0;
 }
@@ -241,17 +183,24 @@ body {
 
 .attractions-item {
 	float: left;
-	width: 400px;
+	/*width: 400px;*/
+	width: 33%;
 	text-align: center;
 }
 
 .attractions .item-bridge {
 	float: right;
+	width: 34%;
+}
+
+.attractions .item-city {
+	width: 34%;
 }
 
 .attractions .item-bridgephoto {
 	position: relative;
-	width: 800px;
+	width: 66%;
+	/*width: 800px;*/
 	height: 256px;
 	background: url(../img/kanyon.jpg) no-repeat 0 0;
 }
@@ -259,7 +208,8 @@ body {
 .attractions .item-cityphoto {
 	position: relative;
 	background: url(../img/town.jpg) no-repeat 0 0;
-	width: 800px;
+	/*width: 800px;*/
+	width: 66%;
 	height: 256px;
 }
 
@@ -357,24 +307,26 @@ span {
 
 
 .search {
+	position: relative;
 	height: 86px;
 	width: 568px;
 	margin: 0 auto;
 	background-color: #766357;
 }
 
-.search-hotel {
+.search .search-hotel {
 	text-align: center;
 	color: #ffffff;
-	padding-top: 33px;
-	margin-bottom: 473px;
+	line-height: 87px;
+	cursor: pointer;
+	text-decoration: none;
 }
 
 .map {
 	position: relative;
-	width: 1200px;
+	width: 100%;
 	height: 593px;
-	/*background: url(../img/map.jpg) no-repeat 0 0;*/
+	background: url(../img/map.jpg) no-repeat 0 0;
 }
 
 
@@ -969,6 +921,11 @@ input[type="checkbox"]:checked + label::before {
   left: 80%;
 }
 
+.filter-price a {
+	text-decoration: none;
+}
+
+
 .btn-transparent {
   display: block;
   padding: 6px 28px;
@@ -977,33 +934,208 @@ input[type="checkbox"]:checked + label::before {
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
+  
   text-transform: uppercase;
 
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
-}
+} 
 
 .btn-transparent:hover {
-  color: #000000;
-
-  background: #ffffff;
+	color: #000000;
+	background: #ffffff;
 }
 
+
+
+@keyframes bounce {
+  0%   {
+    transform: translateY(-1500px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
 .modal-content {
-	position: fixed;
-  	top: 110px;
-  	left: 50%;
-  	width: 408px;
-  	padding: 50px 80px;
+	position: absolute;
+	display: none;
+  	top: 86px;
+  	left: 0;
+  	width: 458px;
+  	padding: 74px 55px;
+  	padding-top: 56px;
 
   	color: #000000;
+  	z-index: 500;
+  	box-shadow:  0 5px 15px rgba(0,0,0,0.3);
 
-  	background: rgba(60, 70, 80, 0.5);
-  	transform: translate(-50%, 0);
+  	background: #ffffff;
 }
+
+
+.modal-content-show {
+	display: block;
+	animation: bounce 0.6s;
+}
+
+.content-item {
+	margin-bottom: 30px;
+}
+
+.date-of {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.date-of-arrival {
+	width: 108px;
+}
+
+.date {
+	position: relative;
+}
+
+.date-of input {
+	width: 333px;
+	padding: 10px 0;
+	padding-left: 13px;
+	border: none;
+	background: #f2f2f2;
+
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.date-of input:hover {
+	background: #ebebeb;
+}
+
+.date-of input:focus {
+	background: #ffffff;
+	outline: none;
+	border: 1px solid #e5e5e5;
+	width: 331px;
+	padding: 9px 0;
+	padding-left: 12px;
+}
+
+.calendar-image {
+	position: absolute;
+	top: 8px;
+	right: 10px;
+	width: 21px;
+	height: 22px;
+	background: url("../img/calendar-normal.png") no-repeat 0 0; 
+	cursor: pointer;
+}
+
+.calendar-image:hover {
+	background: url("../img/calendar-hover.png") no-repeat 0 0; 
+}
+
+.calendar-image:active {
+	background: url("../img/calendar-click.png") no-repeat 0 0; 
+}
+
+.content-find {
+	padding: 17px 196px;
+	background: #81b3d2;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.content-find:hover {
+	background: #669ec0;
+}
+
+.content-find:active {
+	background: #5496bd;
+	color: #94b9d2;
+}
+
+.content-age {
+	display: inline-block;
+	margin-bottom: 71px;
+	margin-right: 50px;
+}
+
+.age-2 {
+	margin-right: 0;
+}
+
+.age-2 > .adult {
+	margin-right: 24px;
+}
+
+.adult {
+	margin-right: 37px;
+}
+
+.age-item {
+	display: inline-block;
+}
+
+.quantity {
+	position: relative;
+	padding: 9px 53px;
+	background: #e5e5e5;
+}
+
+.quantity::before {
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 3px;
+	background: url();
+}
+
+.image-minus {
+	position: absolute;
+	top: 18px;
+	left: 14px;
+	width: 12px;
+	height: 3px;
+	background: url("../img/minus-peace.png") no-repeat 0 0;
+	cursor: pointer;
+}
+
+.image-minus:hover {
+	background: url("../img/minus-hover.png") no-repeat 0 0;
+}
+
+.image-minus:active {
+	background: url("../img/minus-click.png") no-repeat 0 0;
+}
+
+.image-plus {
+	position: absolute;
+	top: 14px;
+	right: 13px;
+	width: 11px;
+	height: 11px;
+	background: url("../img/plus-normal.png") no-repeat 0 0;
+	cursor: pointer;
+}
+
+.image-plus:hover {
+	background: url("../img/plus-hover.png") no-repeat 0 0;
+}
+
+.image-plus:active {
+	background: url("../img/plus-click.png") no-repeat 0 0;
+}
+
+
+
 
 
 

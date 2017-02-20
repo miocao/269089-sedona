@@ -13,23 +13,30 @@
   	<div class="container">
   		<div class="sedona-background">
 	    </div>
-  		<nav class="main-navigation">
-  		  <div class="logo-image"></div>
-  		  <ul>
-            <li>
-              <a class="menu-information" href="#">Информация</a>
-            </li>
-            <li> 
-            	<a href="#">Фото и видео</a>
-            </li>
-            <li> 
-            	<a class="middle" href="#">Карта штата</a>
-            </li>
-            <li> 
-            	<a class="last" href="#">Гостиницы</a>
-            </li> 
-          </ul>
-        </nav>
+	    <nav class="navigation">
+	  		<nav class="left-navigation">
+	  		  <a class="logo-image" href="index.html"></a>
+	  		  <ul>
+	            <li>
+	              <a class="menu-information" href="#">Информация</a>
+	            </li>
+	            <li> 
+	            	<a class="photo" href="#">Фото и видео</a>
+	            </li>
+	           </ul>
+	        </nav>
+
+	        <nav class="right-navigation">
+	          <ul>
+	            <li> 
+	            	<a href="#">Карта штата</a>
+	            </li>
+	            <li> 
+	            	<a class="last-menu" href="hotels.html">Гостиницы</a>
+	            </li> 
+	          </ul>
+	        </nav>
+	    </nav>
     </div>
   </header>
 
@@ -117,27 +124,49 @@
 	    </div>
 
 	    <div class="search">
-	    	<div class="search-hotel"><h3>Поиск гостиницы в Седоне</h3></div>
-	      <!-- <form action="https://echo.htmlacademy.ru" method="post">
-	    	<h3>Поиск гостиницы в Седоне</h3>
-	    	Дата заезда:
-	    	<select name="date-arrival">
-	    		<option value="24-04-2017">24 Апреля 2017</option>
-	    	</select>
-	    	<br>
-	    	Дата выезда:
-	    	<select name="date-departure">
-	    		<option value="04-07-2017">4 Июля 2017</option>
-	    	</select>
-	    	<br>
-	    	<label for="adults-field">Взрослые : </label>
-	        <input type="text" name="adults" id="adults-field" value="2">
-	        <label for="children-field">Дети : </label>
-	        <input type="text" name="children" id="children-field" value="0">
-	        <br>
-	        <input type="submit" value="Найти">
-	      </form> -->
+	    	<a class="search-hotel" href="#"><h3>Поиск гостиницы в Седоне</h3></a>
+	    	<div class="modal-content"> 
+		      <form class="data-form" action="https://echo.htmlacademy.ru" method="get">
+		      	<div class="data">
+			    	<div class="content-item">
+				    	<div class="date-of date-of-arrival"> Дата заезда: </div>
+				    	<div class="date-of date">
+				    		<input type="text" name="date" id="date-field" value="24 Апреля 2017"> 
+				    		<div class="calendar-image"></div>
+				    	</div>
+				    	
+				    </div>
+				    <div class="content-item">
+				    	<div class="date-of date-of-arrival"> Дата выезда: </div>
+				    	<div class="date-of date">
+				    		<input type="text" name="date" id="date-field" value="4 Июля 2017"> 
+				    		<div class="calendar-image"></div>
+				    	</div>
+				    </div>
+				</div>
+
+			    <div class="content-age age-1">
+			    	<div class="age-item adult"> Взрослые: </div>
+			    	<div class="age-item quantity"> 
+			    		2 
+			    		<div class="image-minus"></div>
+			    		<div class="image-plus"></div>
+			    	</div>
+			    </div>
+			    <div class="content-age age-2">
+			    	<div class="age-item adult"> Дети: </div>
+			    	<div class="age-item quantity"> 
+			    		0 
+			    		<div class="image-minus"></div>
+			    		<div class="image-plus"></div>
+			    	</div>
+			    </div>
+		    	
+		    	<h3><a class="content-find" href="">Найти</a></h3>
+		      </form>
+		    </div>
 	    </div>
+
    </main>
 
    <footer class="main-footer">
@@ -167,12 +196,24 @@
 
       </div>
     </footer>
-  	
-  	<div class="modal-content">
-      <button class="modal-content-find" type="button" title="Закрыть">Найти</button>
 
-    </div>
+    <script>
+    	var link = document.querySelector(".search-hotel");
+    	var popup = document.querySelector(".modal-content");
 
+    	link.addEventListener("click", function(event) {
+    		event.preventDefault();
+    		popup.classList.add("modal-content-show");
+      	});
 
+      	window.addEventListener("keydown", function(event) {
+      		if (event.keyCode === 27) {
+      			if (popup.classList.contains("modal-content-show")) {
+      				popup.classList.remove("modal-content-show");
+      			} 
+      		}
+      	});
+
+    </script>
   </body>
 </html>
